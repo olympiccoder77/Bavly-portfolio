@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bavly's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    html {
+            scroll-behavior:smooth;}
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: lightgray;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        height: 100%;
+        width: 100%;
+    }
+    .back-vid{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .hero-info div{
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        color: #72a1de;
+        padding: 5px 10px;
+        margin: 10px;
+        border-radius: 50px;
+        border: 0px solid #72a1de94;
+        width: auto;
+        height:auto;
+        background-color: unset;
+        box-shadow:unset;
+        }
+    .projects-tags{
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position:fixed;
+        display: flex;
+        flex-wrap: wrap;
+        white-space: nowrap;
+        gap: 15px;
+        
+        
+       
+        }
+    .projects-tags a{
+            text-decoration: none;
+            font-size: 30px;
+            box-shadow:1px solid #8e4444;
+            background-color: rgba(71, 61, 139, 0.25);
+            padding: 10px;
+            margin: 5px;
+            color: #78befa;
+            border-radius: 50px;
+        }
+        .projects-tags a:hover{
+            color: #ffffff;
+            background:linear-gradient(to right,#008baa,#7e42a7,#6600c5,#6070fd,#2a46ff,#0099ff,#008ead) ;
+            background-size: 200%;
+            animation: animate-gradient 2.5s linear infinite;
+        }    
+        @keyframes animate-gradient {
+        to{
+            background-position: 200%;
+
+                }
+        }
+        .projects-tags h3{
+            transition: 0.5s;
+        }
+        .projects-tags h3:hover{
+            transform: scale(1.15) ;
+        }
+        .project-item {
+            position: relative;
+            margin: 20px auto;
+            background: rgba(58, 47, 129, 0.288);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 100%;
+        }
+        .project-items h2{
+            color: #008baa;
+            font-size: 40px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            display: flex;
+        }
+        .project-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #1882d8;
+        }
+        .project-content {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .project-image img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+        }
+        .project-details ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .project-details ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .project-btn a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #401ab1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+        .project-btn a:hover {
+            background-color: #950ebb;
+        }
+        @media (max-width: 768px) {
+            .project-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted plays-inline src="videos/galaxy.mp4"></video>
+
+        <div class="cover"></div>
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <img src="images/logo.png" alt="logo" hidden>
+                <h2><span style="color: #8f72dea2;">My</span>Portfolio</h2>
+                <ul>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="skills.html">skills</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <div class="box-icons" >
+                    <p><i class='bx bxl-instagram' ></i></p>
+                    <p><i class='bx bxl-facebook-circle' ></i></p>
+                    <p><i class='bx bxl-telegram' ></i></p>
+                </div>
+            </div>
+        </header>
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video autoplay loop muted plays-inline src="videos/blackhole.mp4"></video>
+        </div>
+        <section class="hero">
+            <div class="hero-info" data-aos="fade-right" data-aos-duration="2000" >
+                <div class="title" hidden>
+                    <p class="typing"></p>
+                </div>
+                <h1 data-aos="fade-right" data-aos-duration="3000" ><span class="gradient">my projects</span></h1>
+                <!-- projects tags -->
+                <div class="projects-tags">
+                <h3><a href="#proggraming-projects">proggraming projects</a></h3>
+                <h3><a href="#desighn-projects">desighn projects</a></h3>
+             
+                </div>
+
+            </div>
+
+             
+        </section>
+        <!-- start of projects -->
+        <section class="project-items" data-aos="fade-right" data-aos-duration="1500" >
+            <!-- start of proggraming projects -->
+            <div id="proggraming-projects" >
+                <h2>Proggraming projects</h2>
+            <!--start of details-->>    
+            <div class="project-item">
+                <h3 class="project-title">Project 1 - Responsive Website</h3>
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/1.png" alt="Project 1">
+                       
+                        
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li>Built with HTML, CSS, and JavaScript</li>
+                            <li>Fully responsive design</li>
+                            <li>Optimized for performance</li>
+                        </ul>
+                        <div class="project-btn">
+                            <a href="#">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of detials-->
+            </div>
+            <!--end of proggraming projects-->
+        </section>
+        
+        <secttion class="about-section" >
+            <div class="info-card">
+                <h1><span id="years of experince"></span>+</h1>
+                <p>years of experince</p>
+            </div>
+
+            <div class="info-card">
+                <h1><span id="technical skills"></span>+</h1>
+                <p>technical skills</p>
+            </div>
+
+            <div class="info-card">
+                <h1><span id="satsfied clients"></span>+</h1>
+                <p>satsfied clients</p>
+            </div>
+
+            <div class="info-card">
+                <h1><span id="projects completed"></span>+</h1>
+                <p>projects completed</p>
+            </div>
+        </secttion>
+
+    </div>
+    <script src="index-script.js"></script>
+    <script src="my number.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
