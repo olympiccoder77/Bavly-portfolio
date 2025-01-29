@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // satsfied clients
 
 // المتغير
-const c = 120;
+const c = 60;
 
 document.addEventListener("DOMContentLoaded", () => {
     const element = document.getElementById("satsfied clients");
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // projects completed
 
 // المتغير
-const d = 80;
+const d = 40;
 
 document.addEventListener("DOMContentLoaded", () => {
     const element = document.getElementById("projects completed");

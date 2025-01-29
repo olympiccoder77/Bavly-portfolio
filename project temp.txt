@@ -1,0 +1,33 @@
+<!-- start of proggraming projects -->
+
+
+            <div  id="proggraming-projects" >
+                <h2 >Proggraming projects</h2>
+
+            <!--start of details-->
+
+            <div class="project-item">
+                <h3 class="project-title">Cardify online store</h3>
+                <div class="project-content">
+                    <div class="project-image">
+                        <img src="images/projects-img/Cardify online store.png" alt="project image">
+                       
+                        
+                    </div>
+                    <div class="project-details">
+                        <ul>
+                            <li>Built with HTML, CSS, and JavaScript</li>
+                            <li>Fully responsive design</li>
+                            <li>Optimized for performance</li>
+                            <li>Perfect UI/UX to relate the brand</li>
+                            <li>Redirect logic used</li>
+                        </ul>
+                        <div class="project-btn">
+                            <a href="https://olympiccoder77.github.io/Cardify/">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end of detials-->
+            </div>
+            <!--end of proggraming projects-->
