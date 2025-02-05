@@ -8,13 +8,55 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-        @media (max-width: 768px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-           
+        .hero p{
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            gap: 15px;
         }
+       @media (min-width: 360px) and (max-width: 900px) {
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+       
+    }
+    .about-section h1{
+        font-size: 40px;
+        
+    }
+    .box-icons{
+        gap:20px;
+    }
+    .about-section{
+        margin: 0 5%;
+    }
+    .hero img {
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto -15%;
+    display: block;
+    }
+    .hero ul li {
+       margin:10px 0 10px 0;
+       font-size: 20px;
+      
+       
+    }
+   
+    .hero img{
+        display: none;
+    }
+    .hero p{
+        margin: 10px 10px;
+        padding: 0;
+        max-width: 100%;
+        font-size: 20px;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -46,16 +88,15 @@
                 
                 <h1 data-aos="fade-right" data-aos-duration="3000" ><span class="gradient">About me</span></h1>
                 <p style="font-size:20px;">Hi, I’m Bavly.<br>
-                a skilled freelancer with expertise across multiple domains. Fluent in English, I specialize in delivering high-quality solutions that combine creativity, functionality, and strategy.</p>
-                <p style="font-size: 30px;">What I Do</p>
-                <p>
-                ● CEO of Pronox Organization<br>
-                ● Front-End Developer<br>
-                ● Back-End Developer<br>
-                ● UI/UX Designer<br>
-                ● Logo Design & Branding<br>
-                ● Content Writer<br>
-                ● SEO Specialist</p>
+                a skilled freelancer with expertise across multiple domains. Fluent in English,<br> I specialize in delivering high-quality solutions that combine creativity, functionality, and strategy.</p><br>
+                <p style="font-size: 30px;" class="gradient">What I Do</p><br>
+                <p style="padding-bottom:10px ;">CEO of Pronox Organization</p>
+                <p style="padding-bottom:10px ;">Front-End Developer</p>
+                <p style="padding-bottom:10px ;">Back-End Developer</p>
+                <p style="padding-bottom:10px ;">UI/UX Designer</p>
+                <p style="padding-bottom:10px ;">Logo Design & Branding</p>
+                <p style="padding-bottom:10px ;">Content Writer</p>
+                <p style="padding-bottom:0px ;">SEO Specialist</p>
             </div>
             <img  data-aos="zoom-in" data-aos-duration="2000" class="astronaut" src="images/mypic.png" alt="info-image">
         </section>
